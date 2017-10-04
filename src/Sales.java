@@ -17,14 +17,18 @@ public class Sales {
       Customer_Id=keyboard.nextInt();
 
       System.out.println("Enter Customer's Name: ");
-      Customer_Name=keyboard.next();
+       keyboard = new Scanner(System.in);
+
+      Customer_Name=keyboard.nextLine ();
 
 
       System.out.println("Enter Customer's TaxCode: ");
-      TaxCode=keyboard.next();
+      keyboard = new Scanner(System.in);
+      TaxCode=keyboard.nextLine ();
 
 
       System.out.println("Enter Customer's SalesAmount: ");
+      keyboard = new Scanner(System.in);
       SalesAmount=keyboard.nextDouble();
 
       if(TaxCode.equalsIgnoreCase ( "NRM" ))
