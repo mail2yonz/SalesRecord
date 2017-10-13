@@ -60,20 +60,24 @@ public class Sales {
       }else if(TaxCode.equalsIgnoreCase ( "BIZ" ))
       {
          TaxAmount=0.045;
+      }else{
+          System.out.println ("Please Enter a valid TaxCode!" );
+
       }
 
       //Calculates the TotalAmount
 
       TotalAmount=SalesAmount + SalesAmount*TaxAmount;
 
-      //Displays
+      //Displays all the inputs
       System.out.println ( );
       System.out.println("The Customer ID is :"+ Customer_Id);
       System.out.println("The Customers Name is :" + Customer_Name);
-      System.out.println("The TaxCode is: :"+ TaxCode);
+
       System.out.println("The  SalesAmount is :"+ SalesAmount);
-      System.out.println("The  TaxAmount is :"+ TaxAmount);
-      System.out.println("The total Amount is :"+ TotalAmount);
+      System.out.println("The TaxCode is: :"+ TaxCode);
+      //System.out.println("The  TaxAmount is :"+ TaxAmount);
+      System.out.println("The Total Amount is :"+ TotalAmount);
       System.out.println();
       System.out.println(" Do you want to Enter another Record (yes/No)");
       answer= keyboard.nextLine ();
